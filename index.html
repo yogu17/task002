@@ -1,0 +1,116 @@
+<head>
+</head>
+<html>
+
+<body>
+
+ <h2> Document Object </h2> 
+
+    <p> : the document object represent a web page that is loaded in the browser.
+     By accessing the document object, we can access the element in the HTML page.
+      With the help of document objects, we can add dynamic content to our web page. The document object can be accessed with a window.document or just document.</p>
+      <br> 
+
+  <pre>   Syntax:
+    
+    document.property_name
+
+    Properties of document:
+* body: It returns the contents of the body element.
+*  anchors: It returns all  elements that have a name attribute.
+*  baseURI: It returns a string value that represents the base URI of the document.
+* cookie: It returns the cookie of the current document.
+
+
+Methods of Document:
+
+* addEventListener(): It is used to attach an event handler to the specified element.
+* adoptNode(): It is used to adopt a node from another document and it returns a node object, representing the adopted node.
+* close(): It is used to close the output stream.
+* createAttribute(): It is used to create an attribute node with the specified name and returns the attribute object.
+* createComment(): It is used to create a comment node with some text.</pre>
+
+
+<h2>WINDOW OBJECT  </h2> 
+
+<p>The window object is the topmost object of the DOM hierarchy.
+ It represents a browser window or frame that displays the contents of the webpage.
+  Whenever a window appears on the screen to display the contents of the document, 
+  the window object is created.  </p>
+
+<pre> 
+    
+    Syntax:
+
+window.property_name;
+
+
+Properties of the window:
+
+* Location: It contains the URL of the current window.
+* innerHeight: It is used to get the height of the content area of the browser window.
+* innerWidth: It is used to get the width of the content area of the browser window.
+
+Methods of WINDOW:
+
+* alert(): It is used to display an alert box. It displays a specified message along with an OK button and is generally used to make sure that the information comes through the user.
+* atob(): It is used for decoding a base-64 encoded string. It is used to decode a string of data that has been encoded using the btoa() method.</pre>
+
+
+
+
+<h2>Difference between document and window: </h2>
+<Pre> 
+                Document                                                                                                                WINDOW
+
+It represents any HTML document or web page that is loaded in the browser                                     It represents a browser window or frame that displays the contents of the webpage.                
+                                                   
+
+    
+It is loaded inside the window                                                                                   It is the very first object that is loaded in the browser.
+
+It is the object of window property.                                                                              It is the object of the browser.
+
+All the tags, elements with attributes in HTML are part of the document                                         Global objects, functions, and variables of JavaScript are members of the window object.
+
+
+We can access the document from a window using the window. document                                            We can access the window from the window only. i.e. window.window
+
+
+The window is part of BOM, not DOM.                                                                             The document is part of BOM (browser object model) and dom (Document object model)
+
+
+Properties of the window object cannot be accessed by the document object.
+                                                                                     Properties of document objects such as title, body, cookies, etc can also be accessed by a window like this window. document.title
+
+syntax:                                                                                              syntax:
+                                                                                                             window.propertyname;
+
+      document.propertyname;
+
+
+
+example:                                                                                               example:
+                                                                                                                 window.innerHeight : will return the height of the content area of the browser
+
+     document.title :  will return the title of the document
+
+
+
+    </Pre>
+
+
+
+
+   
+
+
+
+
+
+
+
+</body>
+
+</html>
+
